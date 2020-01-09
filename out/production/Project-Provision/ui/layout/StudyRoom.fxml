@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="600.0" style="-fx-background-color: #ffcccc;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox alignment="CENTER" prefWidth="200.0" spacing="5.0" style="-fx-background-color: #cc0000;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="welcomeMessage" contentDisplay="CENTER" text="Welcome Message" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Region prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="logoutButton" mnemonicParsing="false" text="Logout" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </top>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <bottom>
+      <HBox prefWidth="200.0" style="-fx-background-color: #cc0000;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Label fx:id="currentTime" text="Current Time" textFill="WHITE" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #cc3399;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="561.0" spacing="5.0">
+               <children>
+                  <Label contentDisplay="CENTER" text="Select a study room: " textFill="WHITE" />
+                  <ChoiceBox fx:id="selectRoom" prefWidth="150.0" />
+                  <Button fx:id="roomButton" mnemonicParsing="false" text="Go" />
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Button fx:id="refreshButton" mnemonicParsing="false" text="Refresh" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="53.0" prefHeight="263.0" prefWidth="580.0" spacing="5.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="48.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <VBox prefHeight="243.0" prefWidth="276.0" spacing="5.0">
+                     <children>
+                        <Label text="Book Room" textFill="WHITE" />
+                        <HBox spacing="5.0">
+                           <children>
+                              <ChoiceBox fx:id="selectBookTime" prefWidth="150.0" />
+                              <Button fx:id="bookButton" mnemonicParsing="false" text="Book" />
+                           </children>
+                        </HBox>
+                        <Label layoutX="15.0" layoutY="15.0" text="Cancel Room" textFill="WHITE" />
+                        <HBox layoutX="15.0" layoutY="37.0" spacing="5.0">
+                           <children>
+                              <ChoiceBox fx:id="selectCancelTime" prefWidth="150.0" />
+                              <Button fx:id="cancelButton" mnemonicParsing="false" text="Cancel" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+                  <Region prefHeight="323.0" prefWidth="130.0" HBox.hgrow="ALWAYS" />
+                  <AnchorPane style="-fx-background-color: #ac00e6;">
+                     <children>
+                        <Label layoutX="51.0" layoutY="6.0" text="Sudy Room Status" textFill="WHITE" />
+                        <VBox alignment="TOP_CENTER" layoutX="8.0" layoutY="38.0" prefHeight="250.0" prefWidth="100.0" spacing="5.0">
+                           <children>
+                              <Label text="09:00" textFill="WHITE" />
+                              <Label layoutX="46.0" layoutY="15.0" text="10:00" textFill="WHITE" />
+                              <Label layoutX="46.0" layoutY="42.0" text="11:00" textFill="WHITE" />
+                              <Label layoutX="44.0" layoutY="69.0" text="12:00" textFill="WHITE" />
+                              <Label layoutX="44.0" layoutY="96.0" text="13:00" textFill="WHITE" />
+                              <Label layoutX="44.0" layoutY="123.0" text="14:00" textFill="WHITE" />
+                              <Label layoutX="44.0" layoutY="150.0" text="15:00" textFill="WHITE" />
+                              <Label layoutX="43.0" layoutY="147.0" text="16:00" textFill="WHITE" />
+                              <Label layoutX="43.0" layoutY="169.0" text="17:00" textFill="WHITE" />
+                              <Label layoutX="43.0" layoutY="191.0" text="18:00" textFill="WHITE" />
+                              <Label layoutX="43.0" layoutY="213.0" text="19:00" textFill="WHITE" />
+                              <Label layoutX="43.0" layoutY="235.0" text="20:00" textFill="WHITE" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="115.0" layoutY="38.0" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                           <children>
+                              <Label fx:id="label09" text="N/A" textFill="WHITE" />
+                              <Label fx:id="label10" layoutX="49.0" layoutY="10.0" text="N/A" textFill="WHITE" />
+                              <Label fx:id="label11" layoutX="49.0" layoutY="32.0" text="N/A" textFill="WHITE" />
+                              <Label fx:id="label12" layoutX="49.0" layoutY="54.0" text="N/A" textFill="WHITE" />
+                              <Label fx:id="label13" layoutX="49.0" layoutY="76.0" text="N/A" textFill="WHITE" />
+                              <Label fx:id="label14" layoutX="49.0" layoutY="98.0" text="N/A" textFill="WHITE" />
+                              <Label fx:id="label15" layoutX="49.0" layoutY="120.0" text="N/A" textFill="WHITE" />
+                              <Label fx:id="label16" layoutX="49.0" layoutY="142.0" text="N/A" textFill="WHITE" />
+                              <Label fx:id="label17" layoutX="49.0" layoutY="164.0" text="N/A" textFill="WHITE" />
+                              <Label fx:id="label18" layoutX="49.0" layoutY="186.0" text="N/A" textFill="WHITE" />
+                              <Label fx:id="label19" layoutX="49.0" layoutY="208.0" text="N/A" textFill="WHITE" />
+                              <Label fx:id="label20" layoutX="49.0" layoutY="230.0" text="N/A" textFill="WHITE" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
