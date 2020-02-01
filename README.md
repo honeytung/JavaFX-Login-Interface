@@ -1,2 +1,2 @@
-# JavaFX-Login-Interface
-Simple login interface design using JavaFX
+# StudyRoom-Booking-Interface
+Simple Study Room Booking interface using JavaFX
